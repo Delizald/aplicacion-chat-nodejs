@@ -1,0 +1,19 @@
+{
+  "name": "aplicacion-chat-nodejs",
+  "version": "1.0.0",
+  "description": "Testing a chat application in node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Elizalde",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

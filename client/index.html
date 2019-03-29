@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Chat with nodeJS and Socket.io example</title>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+        <style>
+            #messages{
+                width: 95%;
+                max-width: 400px;
+                height: 350px;
+                overflow-y: scroll;
+                border: 1px solid #eee;
+                box-shadow: 0px 0px 20px #ccc inset;
+            }
+
+            .message{
+                margin: 20 px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solic #ccc;
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+            <h1>Chat with nodeJS and Socket.io example</h1>
+            <div id="messages"></div>
+            <form onsubmit="return addMessage(this)">
+                <input id="nickname" type="text" placeholder="Name"/>
+                <textarea id="text" placeholder="Message..."></textarea>
+                <input type="submit" value="Send"/>
+            </form>
+    </body>
